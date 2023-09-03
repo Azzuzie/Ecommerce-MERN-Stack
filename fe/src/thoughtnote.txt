@@ -1,0 +1,10 @@
+=> first i created homecover, header, footer, and slider js components 
+
+=> I implemented all those components based on my previous codes used while 
+developing e-commerce frontend using html,css and js
+
+=> After that i placed all those components in a single main component called Home.js component 
+
+=> I also included same images used in earlier
+
+=> Also i included bootstrap links , fontawesome and google fonts links in the index.html file 

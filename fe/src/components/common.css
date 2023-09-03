@@ -1,0 +1,147 @@
+
+ 
+    /* Styling Brand  */
+    .brand-style{
+        width: 25%;
+    }
+
+    /* Styling Brand */
+    .brand{
+        
+        /* font-family: 'Cedarville Cursive', cursive; */
+        background: linear-gradient(to left,yellow,rgb(104, 255, 3),rgb(255, 255, 254));
+        background-size:400% ;
+        font-size: 35px;
+        font-family: 'Lobster', cursive;
+        letter-spacing: 2px;
+        font-weight: 900;
+        margin:0px 20px;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: animate 10s linear infinite;
+        
+    }
+
+    /* styling cart icon */
+    .cart-logo{
+        background: linear-gradient(to right,yellow,rgb(240, 132, 9));
+        background-size:400% ;
+        font-size: 20px;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: animate 4s linear infinite;
+    
+    }
+    @keyframes animate {
+        0%{
+            background-position: 0%;
+        }
+        100%{
+            background-position: 400%;
+        }
+        
+    }
+    
+    
+    /* Form Search Bar and Search Button */
+    .search-form{
+        width: 500px;
+    }
+    @media only screen and (max-width:995px){
+          .search-form{
+            width: auto;
+            margin-top: 1rem;
+          }
+        .login-btn{
+            width: 100px;
+            margin-top: 1rem;
+        }
+        .brand-style{
+            width: auto;
+        }
+        
+    }
+    
+    h1{
+        color: aliceblue;
+    }
+
+
+
+    /* making nav links responsive */
+    @media  screen and (max-width:991px) {
+    .li-width{
+      padding: 0 30px;
+    }
+    .navbar-nav-small {
+      --bs-nav-link-padding-x: 0;
+      --bs-nav-link-padding-y: 0.5rem;
+      --bs-nav-link-font-weight: ;
+      --bs-nav-link-color: var(--bs-navbar-color);
+      --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+      --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+  }
+}
+
+/* Dropdown opens on hovering */
+@media  screen and (min-width:900px) {
+    .dropdown:hover .dropdown-menu{
+      display:block !important;
+    }
+    .dropdown:focus .dropdown-menu.show{
+      display:block !important;
+    }
+    .dropdown .dropdown-menu.show{
+      display:none !important
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  footer>.row {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .col {
+    width: 23%;
+  }
+  h3 {
+    margin-top: 0;
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  li>a{
+        text-decoration: none;
+        color: whitesmoke;
+  }
+  hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  p {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+  }

@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+
+    /* center image */
+    .caro{
+        height: 500px;
+        border: 2px solid black;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    .back-img{
+        background-image: url("../img/lg.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        filter: brightness(100%);
+        text-align: center;
+        padding-top: 200px;
+       
+    }
+    
+    .log{
+        color: rgb(255, 255, 255);
+        font-family: 'Lobster', cursive;
+        font-size: 60px;
+        padding: 0px;
+        margin: 0px;
+        
+        
+        text-shadow: 0 0 10px black;
+    }
+    .smry{
+        color: rgb(255, 255, 255);
+        font-size: medium;
+        text-shadow: 0 0 10px black;
+        
+    }
+
+
+
+/* Slider */
+h2{
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: 40px;
+    margin: 30px 0 -10px;
+    
+}
+.car-box{
+    
+    margin: 0px;
+    
+}
+.card{
+    border: none;
+    border-radius: 5px;
+}
+.card-body{
+    text-align: center;
+}
+.carousel-inner{
+    padding: 0.2rem;
+}
+.carousel-control-prev,.carousel-control-next{
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    
+}
+/* Slider cards for large devices */
+@media  screen and (min-width:900px) {
+.cards-wrapper{
+    display: flex;
+}
+.card{
+    margin: 2rem;
+    width: calc(100%/4);  
+}
+.image-wrapper{
+    height: 20vw;
+}
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+}
+
+
+/* Slider cards for small devices */
+@media only screen and (max-width:576px){
+    .card:not(:first-child){
+        display: none;
+    }
+    .cards-wrapper{
+        display: flex;
+        padding: 2rem;
+    }
+    .image-wrapper{
+        height: 80vw;
+        
+       
+    }
+    .image-wrapper img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+   
+}
+
+
+/* Slider cards for medium devices */
+@media only screen and (max-width: 900px) and (min-width: 576px){
+    .cards-wrapper{
+        display: flex;
+    }
+    .card:not(:nth-child(-n + 2)){
+        display: none;
+    }
+    .image-wrapper{
+        height: 40vw;
+        
+        
+    }
+    .image-wrapper img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .card{
+        margin: 2rem;
+        width: calc(100%/2);  
+    }
+    }
+
+
+    

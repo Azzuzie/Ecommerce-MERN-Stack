@@ -1,0 +1,42 @@
+
+.lgn{
+    text-align: center;
+    font-weight: 600;
+}
+.boxl{
+    width: 50%;
+    background-color: rgba(18, 207, 224, 0.26);
+    padding: 20px;
+}
+.buttonl{
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+}
+.buttonl:hover{
+    background-color: aqua;
+    border: 2px solid blue;
+}
+.form-group{
+    padding: 6px;
+}
+.forml{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media  screen and (min-width:500px) and (max-width:900px) {
+    .boxl{
+        width: 70%;
+        background-color: rgba(154, 202, 206, 0.26);
+        padding: 20px;
+    }
+}
+@media  screen and (max-width:500px) {
+    .boxl{
+        width: 90%;
+        background-color: rgba(154, 202, 206, 0.26);
+        padding: 20px;
+    }
+}
